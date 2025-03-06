@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0;url=/jessemakesgames/" />
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        var basePath = "/jessemakesgames";
+
+        // Only redirect if not already at the correct base path
+        if (!path.startsWith(basePath)) {
+          window.location.replace(basePath + path);
+        }
+      })();
+    </script>
   </head>
   <body>
-    <script>
-      var path = window.location.pathname.replace('/jessemakesgames', '');
-      window.location.replace('/jessemakesgames' + path);
-    </script>
+    <h1>Redirecting...</h1>
   </body>
 </html>
