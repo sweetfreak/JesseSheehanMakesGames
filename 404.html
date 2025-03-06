@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/" />
   <script>
-    window.location.href = "/jessemakesgames/";
+    // Get the current path after the domain (e.g., "/projects")
+    var path = window.location.pathname;
+
+    // Ensure it redirects properly under your repo path
+    var newUrl = "/jessemakesgames" + path;
+    
+    // Redirect the user
+    window.location.replace(newUrl);
   </script>
   <title>Redirecting...</title>
 </head>
