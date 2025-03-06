@@ -5,7 +5,8 @@
   </head>
   <body>
     <script>
-      window.location.replace("/jessemakesgames" + window.location.pathname);
+      var path = window.location.pathname.replace('/jessemakesgames', '');
+      window.location.replace('/jessemakesgames' + path);
     </script>
   </body>
 </html>
